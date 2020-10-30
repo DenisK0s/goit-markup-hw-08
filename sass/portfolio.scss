@@ -1,0 +1,21 @@
+// utils
+@import "../sass/utils/variables";
+@import "../sass/utils/visually-hidden";
+
+// base
+@import "../sass/base/common";
+@import "../sass/base/container";
+
+// components
+@import "../sass/components/logo";
+@import "../sass/components/section-title";
+@import "../sass/components/social-links";
+@import "../sass/components/button";
+
+// layout
+@import "../sass/layout/header";
+@import "../sass/layout/navigation";
+@import "../sass/layout/contacts";
+@import "../sass/layout/button-list";
+@import "../sass/layout/work-list";
+@import "../sass/layout/footer";

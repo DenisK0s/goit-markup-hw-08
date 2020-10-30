@@ -1,0 +1,37 @@
+body {
+	color: $main-text-color;
+	font-family: $main-font;
+	font-style: normal;
+
+	background-color: #ffffff;
+}
+
+.list {
+	padding: 0px;
+	margin: 0px;
+
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.address {
+	font-style: normal;
+}
+
+.current {
+	color: $accent-color;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
