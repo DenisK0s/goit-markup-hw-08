@@ -1,27 +1,37 @@
 .contacts {
-	margin-left: auto;
+	margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+	.contacts {
+		margin: 0;
+		margin-left: auto;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.contacts {
+		margin-right: 215px;
+	}
 }
 
 .contacts__list {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 
 	&-item:not(:last-child) {
-		margin-right: 50px;
+		margin-bottom: 16px;
 	}
 
 	&-link {
 		display: inline-flex;
 		align-items: center;
 
-		padding-top: 32px;
-		padding-bottom: 32px;
-
 		color: $sub-text-color;
 		font-style: normal;
 		font-weight: $secondary-font-weight;
-		font-size: 14px;
-		line-height: 1.142;
+		font-size: 18px;
+		line-height: 1.167;
 		letter-spacing: 0.02em;
 
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -45,3 +55,83 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.contacts__list {
+		align-items: flex-start;
+
+		&-item:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		&-link {
+			font-size: 14px;
+			line-height: 1.143;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.contacts__list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&-item:not(:last-child) {
+			margin-right: 30px;
+			margin-bottom: 0;
+		}
+
+		&-link {
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+	}
+}
+// .contacts {
+// 	margin-left: auto;
+// }
+
+// .contacts__list {
+// 	display: flex;
+// 	align-items: center;
+
+// 	&-item:not(:last-child) {
+// 		margin-right: 50px;
+// 	}
+
+// 	&-link {
+// 		display: inline-flex;
+// 		align-items: center;
+
+// 		padding-top: 32px;
+// 		padding-bottom: 32px;
+
+// 		color: $sub-text-color;
+// 		font-style: normal;
+// 		font-weight: $secondary-font-weight;
+// 		font-size: 14px;
+// 		line-height: 1.142;
+// 		letter-spacing: 0.02em;
+
+// 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// 		&:hover,
+// 		&:focus {
+// 			color: $accent-color;
+// 		}
+// 	}
+
+// 	&-icon {
+// 		margin-right: 10px;
+
+// 		fill: $sub-text-color;
+
+// 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// 		.contacts__list-link:hover &,
+// 		.contacts__list-link:focus & {
+// 			fill: $accent-color;
+// 		}
+// 	}
+// }

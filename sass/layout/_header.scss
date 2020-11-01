@@ -1,13 +1,10 @@
 .header {
-	border: 1px solid #ececec;
+	position: relative;
 
-	.container {
-		display: flex;
-		align-items: center;
-	}
+	border-bottom: 1px solid #ececec;
 }
 
-.menu-btn {
+.menu-button {
 	display: inline-flex;
 	margin: 0;
 	padding: 0;
@@ -15,14 +12,60 @@
 	background-color: transparent;
 }
 
-.menu-btn .icon-close {
+.menu-button .icon-close {
 	display: none;
 }
 
-.menu-btn.is-open .icon-close {
+.menu-button.is-open .icon-menu {
+	display: none;
+}
+
+.menu-button.is-open .icon-close {
 	display: block;
 }
 
-.menu-btn.is-open .icon-menu {
+@media screen and (min-width: 768px) {
+	.menu-button {
+		display: none;
+	}
+}
+
+.menu-box {
 	display: none;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+	width: 100%;
+	padding: 60px;
+
+	text-align: center;
+
+	background-color: $primary-white-color;
+	border-top: 1px solid #ececec;
+
+	&.is-open {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.menu-box {
+		position: static;
+
+		display: flex;
+		align-items: center;
+		margin-left: 88px;
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.menu-box {
+		display: flex;
+		align-items: center;
+		margin-left: 93px;
+		padding: 0;
+	}
 }
