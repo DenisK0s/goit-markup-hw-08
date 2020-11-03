@@ -45,3 +45,27 @@
 		width: 1200px;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.footer .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.footer .container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.footer .container {
+		display: flex;
+		align-items: baseline;
+	}
+}

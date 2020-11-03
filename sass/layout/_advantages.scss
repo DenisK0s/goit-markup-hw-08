@@ -1,4 +1,8 @@
 .advantages__list {
+	&-item:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
 	&-item::before {
 		content: "";
 
@@ -57,10 +61,6 @@
 
 		&-item {
 			width: 100%;
-		}
-
-		&-item:not(:last-child) {
-			margin-bottom: 30px;
 		}
 	}
 }

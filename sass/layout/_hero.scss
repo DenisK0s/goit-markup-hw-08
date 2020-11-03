@@ -1,5 +1,14 @@
 .hero {
+	padding-top: 118px;
+	padding-bottom: 118px;
+
 	text-align: center;
+
+	background-color: $main-background-color;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Images/hero/bg-hero-mob.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
 	&__title {
 		margin-left: auto;
@@ -36,15 +45,6 @@
 
 @media screen and (min-width: 480px) {
 	.hero {
-		padding-top: 118px;
-		padding-bottom: 118px;
-
-		background-color: $main-background-color;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Images/hero/bg-hero-mob.jpg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-
 		&__title {
 			width: 400px;
 

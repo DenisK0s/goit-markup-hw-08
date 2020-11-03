@@ -1,18 +1,12 @@
 .section-title {
 	margin-top: 0px;
+	margin-bottom: 30px;
 
+	font-size: 28px;
+	line-height: 1.178;
 	font-weight: $bold-font-weight;
 	text-align: center;
 	letter-spacing: 0.03em;
-}
-
-@media screen and (min-width: 480px) {
-	.section-title {
-		margin-bottom: 30px;
-
-		font-size: 28px;
-		line-height: 1.178;
-	}
 }
 
 @media screen and (min-width: 1200px) {
