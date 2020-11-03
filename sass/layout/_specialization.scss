@@ -39,3 +39,15 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1199px) {
+	.specialization {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.specialization {
+		display: block;
+	}
+}

@@ -1,17 +1,8 @@
 .clients__list {
-	display: flex;
-	justify-content: center;
-
-	&-item:not(:last-child) {
-		margin-right: 30px;
-	}
-
 	&-link {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 170px;
-		height: 90px;
 
 		border: 1px solid #afb1b8;
 		border-radius: 4px;
@@ -31,6 +22,78 @@
 		.clients__list-link:hover &,
 		.clients__list-link:focus & {
 			fill: $accent-color;
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.clients__list {
+		display: flex;
+		flex-wrap: wrap;
+
+		&-item:nth-child(odd) {
+			margin-right: 30px;
+		}
+
+		&-item:nth-last-child(n + 3) {
+			margin-bottom: 30px;
+		}
+
+		&-link {
+			width: 210px;
+			height: 90px;
+
+			border: 1px solid #afb1b8;
+			border-radius: 4px;
+
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+			&:hover {
+				border: 1px solid #2196f3;
+			}
+		}
+
+		&-icon {
+			fill: $main-icon-color;
+
+			transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+			.clients__list-link:hover &,
+			.clients__list-link:focus & {
+				fill: $accent-color;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.clients__list {
+		&-item {
+			width: 354px;
+		}
+
+		&-item:nth-child(3n + 3) {
+			margin-right: 0;
+		}
+
+		&-item:nth-last-child(n + 4) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.clients__list {
+		display: flex;
+		justify-content: space-between;
+
+		&-item:not(:last-child) {
+			margin-right: 30px;
+		}
+
+		&-link {
+			width: 170px;
+			height: 90px;
 		}
 	}
 }

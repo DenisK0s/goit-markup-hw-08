@@ -1,8 +1,4 @@
 .advantages__list {
-	&-item {
-		width: 270px;
-	}
-
 	&-item::before {
 		content: "";
 
@@ -69,14 +65,13 @@
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 	.advantages__list {
 		display: flex;
 		flex-wrap: wrap;
 
 		&-item {
 			width: 354px;
-			height: 251px;
 		}
 
 		&-item:nth-child(odd) {
