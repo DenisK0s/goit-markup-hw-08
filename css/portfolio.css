@@ -55,13 +55,13 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -442,8 +442,8 @@ img {
 }
 
 .button-list {
-  margin-bottom: 50px;
-  text-align: center;
+  margin-bottom: 40px;
+  font-size: 0;
 }
 
 .button-list-item {
@@ -452,6 +452,25 @@ img {
 
 .button-list-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .button-list-item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-list {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+  }
 }
 
 .modal-btn {
@@ -481,16 +500,13 @@ img {
 }
 
 .work-list-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
+  width: 100%;
 }
 
-.work-list-item:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.work-list-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .work-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .work-list-link {
@@ -536,6 +552,38 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .work-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work-list-item {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-list-item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .work-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-list-item {
+    width: calc((100% - 60px) / 3);
+  }
+  .work-list-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .work-list-item:nth-last-child(n + 4) {
+    margin-bottom: 30px;
+  }
 }
 
 .card-overlay {

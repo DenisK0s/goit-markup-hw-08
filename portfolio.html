@@ -16,47 +16,54 @@
 		<!-- Header -->
 		<header class="header">
 			<div class="container">
-				<!-- Navigation -->
-				<nav class="navigation">
-					<!-- Logo -->
-					<a class="logo link" href="./index.html" aria-label="Логотип Веб Студии" lang="en">
-						<span class="logo__web">Web</span><span class="logo__studio--black">Studio</span>
-					</a>
+				<a class="logo link" href="./index.html" aria-label="Логотип Веб Студии" lang="en">
+					<span class="logo__web">Web</span><span class="logo__studio--black">Studio</span>
+				</a>
 		
-					<!-- Navigation list-->
-					<ul class="navigation__list list">
-						<li class="navigation__list-item">
-							<a class="navigation__list-link link" href="./index.html">Студия</a>
-						</li>
-						<li class="navigation__list-item">
-							<a class="navigation__list-link link current" href="">Портфолио</a>
-						</li>
-						<li class="navigation__list-item">
-							<a href="" class="navigation__list-link link">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<address class="contacts">
-					<!-- Contacts -->
-					<ul class="contacts__list list">
-						<li class="contacts__list-item">
-							<a class="contacts__list-link link" href="mailto:info@devstudio.com">
-								<svg class="contacts__list-icon" width="16" height="12">
-									<use href="./Images/sprite.svg#icon-envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li class="contacts__list-item">
-							<a class="contacts__list-link link" href="tel:+380961111111">
-								<svg class="contacts__list-icon" width="10" height="16">
-									<use href="./Images/sprite.svg#icon-smartphone"></use>
-								</svg>
-								+38 096 111 11 11
-							</a>
-						</li>
-					</ul>
-				</address>
+				<button class="menu-button " type="button" aria-expanded="false" aria-controls="menu-box" data-menu-button>
+					<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+						<use class="icon-close" href="./Images/sprite.svg#icon-close_40px"></use>
+						<use class="icon-menu" href="./Images/sprite.svg#icon-menu_40px"></use>
+					</svg>
+				</button>
+		
+				<div class="menu-box" id="menu-box" data-menu>
+					<nav class="navigation">
+						<ul class="navigation__list list">
+							<li class="navigation__list-item">
+								<a class="navigation__list-link link" href="./index.html">Студия</a>
+							</li>
+							<li class="navigation__list-item">
+								<a class="navigation__list-link link current" href="">Портфолио</a>
+							</li>
+							<li class="navigation__list-item">
+								<a href="" class="navigation__list-link link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+		
+					<address class="contacts">
+		
+						<ul class="contacts__list list">
+							<li class="contacts__list-item">
+								<a class="contacts__list-link link" href="mailto:info@devstudio.com">
+									<svg class="contacts__list-icon" width="16" height="12">
+										<use href="./Images/sprite.svg#icon-envelope"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="contacts__list-item">
+								<a class="contacts__list-link link" href="tel:+380961111111">
+									<svg class="contacts__list-icon" width="10" height="16">
+										<use href="./Images/sprite.svg#icon-smartphone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+					</address>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -76,8 +83,20 @@
 						<li class="work-list-item">
 							<a class="work-list-link link" href="">
 								<div class="work-list-link-wrapper">
-									<img class="work-list-link-img" src="./Images/work-list/project-1.jpg" alt="Лептоп с тремя фото на экране" width="370"
-										height="294" />
+									<picture>
+										<source srcset="./Images/work-list/work-desc-1.webp 1x, ./Images/work-list/work-desc-1@2x.webp 2x"
+											media="(min-width:1200px)" type="Image/webp">
+										<source srcset="./Images/work-list/work-tabl-1.webp 1x, ./Images/work-list/work-tabl-1@2x.webp 2x"
+											media="(min-width:768px)" type="Image/webp">
+										<source srcset="./Images/work-list/work-mob-1.webp 1x, ./Images/work-list/work-mob-1@2x.webp 2x" media="(min-width:480px)"
+											type="Image/webp">
+										<source srcset="./Images/work-list/work-desc-1.jpg 1x, ./Images/work-list/work-desc-1@2x.jpg 2x"
+											media="(min-width:1200px)">
+										<source srcset="./Images/work-list/work-tabl-1.jpg 1x, ./Images/work-list/work-tabl-1@2x.jpg 2x"
+											media="(min-width:768px)">
+										<source srcset="./Images/work-list/work-mob-1.jpg 1x, ./Images/work-list/work-mob-1@2x.jpg 2x" media="(min-width:480px)">
+										<img class="work-list-link-img" src="./Images/work-list/work-mob-1.jpg" alt="Лептоп с тремя фото на экране" />
+									</picture>									
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -332,5 +351,8 @@
 				</form>
 			</div>
 		</footer>
+
+		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
