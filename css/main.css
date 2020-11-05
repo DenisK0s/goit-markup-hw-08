@@ -540,6 +540,17 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .menu-box.is-open {
+    position: static;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .menu-box {
     position: static;
     z-index: 0;
