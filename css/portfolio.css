@@ -43,6 +43,7 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -53,6 +54,7 @@ img {
 }
 
 .container {
+  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -262,6 +264,7 @@ img {
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 1;
   width: 100%;
   padding: 60px;
   text-align: center;
@@ -276,6 +279,7 @@ img {
 @media screen and (min-width: 768px) {
   .menu-box {
     position: static;
+    z-index: 0;
     display: flex;
     align-items: center;
     margin-left: 88px;
@@ -560,7 +564,7 @@ img {
     flex-wrap: wrap;
   }
   .work-list-item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
   }
 }
@@ -616,6 +620,7 @@ img {
 }
 
 .footer {
+  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
