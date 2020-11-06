@@ -54,7 +54,6 @@ img {
 }
 
 .container {
-  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -230,6 +229,7 @@ img {
 
 .header {
   position: relative;
+  min-width: 480px;
   border-bottom: 1px solid #ececec;
 }
 

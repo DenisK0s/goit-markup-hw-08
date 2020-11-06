@@ -54,7 +54,6 @@ img {
 }
 
 .container {
-  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -493,6 +492,7 @@ img {
 
 .header {
   position: relative;
+  min-width: 480px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -827,6 +827,10 @@ img {
   }
 }
 
+.advantages {
+  min-width: 480px;
+}
+
 .advantages__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -917,6 +921,7 @@ img {
 }
 
 .specialization {
+  min-width: 480px;
   padding-bottom: 94px;
 }
 
@@ -967,6 +972,7 @@ img {
 }
 
 .team {
+  min-width: 480px;
   background-color: #f5f4fa;
 }
 
@@ -1046,6 +1052,10 @@ img {
     width: 270px;
     height: 428px;
   }
+}
+
+.clients {
+  min-width: 480px;
 }
 
 .clients__list {
