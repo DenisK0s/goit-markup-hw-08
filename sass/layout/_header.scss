@@ -1,8 +1,6 @@
 .header {
 	position: relative;
 
-	min-width: 480px;
-
 	border-bottom: 1px solid #ececec;
 }
 
@@ -40,7 +38,6 @@
 	left: 0;
 	z-index: 1;
 
-	min-width: 480px;
 	padding: 60px;
 
 	text-align: center;
@@ -53,7 +50,7 @@
 	}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
 	.menu-box {
 		width: 100%;
 	}
@@ -87,9 +84,6 @@
 
 @media screen and (min-width: 1200px) {
 	.menu-box {
-		display: flex;
-		align-items: center;
 		margin-left: 93px;
-		padding: 0;
 	}
 }
