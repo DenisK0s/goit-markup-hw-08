@@ -43,7 +43,6 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1088,6 +1087,13 @@ img {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__list-item:not(:nth-child(3n + 3)) {
     margin-right: 30px;
@@ -1195,8 +1201,6 @@ img {
 }
 
 .subscription-box__input {
-  width: 450px;
-  height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
   color: #ffffff;
@@ -1244,6 +1248,19 @@ img {
 
 .subscription-box__btn-icon {
   fill: #ffffff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .subscription-box__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscription-box__input {
+    width: 450px;
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
