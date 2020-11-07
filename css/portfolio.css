@@ -650,8 +650,19 @@ img {
 }
 
 .address-box {
-  width: 231px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .address-box {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .address-box {
+    width: 231px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -767,6 +778,9 @@ img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
+  .subscription-box {
+    width: 100%;
+  }
   .subscription-box__input {
     width: 100%;
     height: 50px;
@@ -791,7 +805,6 @@ img {
   }
   .subscription-box__input {
     width: 358px;
-    height: 50px;
     margin-bottom: 0;
   }
   .subscription-box__btn {
