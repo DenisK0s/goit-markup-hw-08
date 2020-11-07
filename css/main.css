@@ -506,6 +506,14 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-button .icon-menu:hover,
+.menu-button .icon-menu:focus,
+.menu-button .icon-close:hover,
+.menu-button .icon-close:focus {
+  fill: #2196f3;
 }
 
 .menu-button .icon-close {
