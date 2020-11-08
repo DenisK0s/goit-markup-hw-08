@@ -398,12 +398,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts {
-    margin-right: 215px;
-  }
-}
-
 .contacts__list {
   display: flex;
   flex-direction: column;
