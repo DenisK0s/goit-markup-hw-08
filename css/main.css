@@ -358,12 +358,13 @@ img {
 .modal-form-agreement-check::before {
   content: "";
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 7px;
   background-color: #ffffff;
   background-image: url(../Images/icons-svg/vector.svg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .modal-form-agreement:focus + .modal-form-agreement-check::before {
